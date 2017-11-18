@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-header class="container">
+    <mat-form-field class="full-width">
+      <input type="text" matInput placeholder="Rechercher un repo ou un utilisateur">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-select placeholder="Recherche :">
+        <mat-option *ngFor="let searchType of searchTypes" [value]="searchType">
+          {{ searchType }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card-header>
+</mat-card>
