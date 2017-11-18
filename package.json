@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "hmr": "ng serve --hmr -e=hmr",
+    "git-deploy": "ng build --prod --output-path docs --base-href ng-github",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
